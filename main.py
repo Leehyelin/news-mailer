@@ -17,7 +17,7 @@ from datetime import datetime
 
 GMAIL_USER         = os.environ["GMAIL_USER"]
 GMAIL_APP_PASSWORD = os.environ["GMAIL_APP_PASSWORD"]
-SEND_TO            = os.environ["GMAIL_USER"]  # 본인한테 발송
+SEND_TO            = os.environ["MAIL_RECVR"]  # 본인한테 발송
 TOP_N              = 5  # 섹션별 기사 수
 
 HEADERS = {
