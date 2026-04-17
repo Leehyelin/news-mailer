@@ -186,6 +186,7 @@ def send_mail(html: str):
     msg["From"]    = GMAIL_USER
     msg["To"]      = SEND_TO
     msg.attach(MIMEText(html, "html", "utf-8"))
+    print("수신자: " + SEND_TO)
 
     with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
         smtp.login(GMAIL_USER, GMAIL_APP_PASSWORD)
