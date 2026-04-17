@@ -23,4 +23,5 @@ jobs:
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          MAIL_RECVR : ${{ secrets.MAIL_RECVR }}
         run: python main.py
